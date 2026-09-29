@@ -73,7 +73,10 @@ public class MusicOrganizer
         }
         return null;
     }
-    public void listAllFiles(){
+    public void listAllFiles(){   
+        for( String filename:files){
+            System.out.println(filename);
+        }
         
     }
 
