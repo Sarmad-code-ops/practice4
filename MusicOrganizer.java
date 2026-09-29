@@ -62,6 +62,9 @@ public class MusicOrganizer
     public void checkIndex(int index){
         if(index<0 || index> files.size()-1){
             System.out.println("wrong index. valid range is 0 to" + (files.size()-1));
-        }   
+        }    
     }   
+    public boolean validIndex (int index){
+        return(index)== 0 && index <=files.size()-1;
+    }
 }
