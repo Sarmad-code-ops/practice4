@@ -67,4 +67,14 @@ public class MusicOrganizer
     public boolean validIndex (int index){
         return(index)== 0 && index <=files.size()-1;
     }
-}
+    public String listfile(int index){
+        if(validIndex(index)) {
+            return files.get(index);
+        }
+        return null;
+    }
+    
+
+}   
+
+
